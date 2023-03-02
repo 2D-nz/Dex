@@ -45,7 +45,7 @@ function Pokemons() {
 			{isLoading ? <p>Loading...</p> : ""}
 			{pokemons.map((pokemon) => {
 				return (
-					<div className="flex items-center justify-evenly">
+					<div className="grid items-center grid-cols-3">
 						<p>{pokemon.name}</p>
 						<img src={pokemon.sprites.front_default} />
 						<div>
