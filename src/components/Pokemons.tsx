@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import "./Types.css";
+
 
 const pokes = [];
 function Pokemons() {
@@ -36,7 +38,6 @@ function Pokemons() {
 	// 			})
 	// 	);
 	// };
-
 	// showData(pokemons);
 
 	return (
@@ -48,10 +49,18 @@ function Pokemons() {
 						<p>{pokemon.name}</p>
 						<img src={pokemon.sprites.front_default} />
 						<div>
+							
 							{/* {pokemon.types[0].type.name} */}
 							{pokemon.types.map((tipo) => (
-								<p>{tipo.type.name}</p>
+								
+								
+							
+								<p className={`${tipo.type.name}`}>{tipo.type.name}</p>
+
+								
+								
 							))}
+							
 						</div>
 					</div>
 				);
